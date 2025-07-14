@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Pearl's Birthday Surprise! 🎉</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Puzzle Section -->
+        <div id="login-section" class="section active">
+            <div class="stars"></div>
+            <div class="stars2"></div>
+            <div class="stars3"></div>
+            
+            <div class="login-container">
+                <h1 class="title">🎂 Pearl's Birthday Puzzle 🎂</h1>
+                <p class="subtitle">Solve the puzzle to unlock your surprise!</p>
+                
+                <div class="puzzle-container">
+                    <div class="puzzle-question">
+                        <h3>🧩 Birthday Riddle:</h3>
+                        <p>"I am not alive, but I grow;<br>
+                            I don't have lungs, but I need air;<br>
+                            I don't have a mouth, but water kills me.<br>
+                            What am I?"</p>
+                    </div>
+                    
+                    <div class="answer-section">
+                        <input type="text" id="answer-input" placeholder="Enter your answer..." autocomplete="off">
+                        <button id="submit-btn" onclick="checkAnswer()">🎁 Unlock Surprise!</button>
+                    </div>
+                    
+                    <div class="hint-section">
+                        <button id="hint-btn" onclick="showHint()">💡 Need a hint?</button>
+                        <div id="hint-text" class="hidden">
+                            <p>💡 Hint: It's something that makes you smile and brings joy!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="attempts">
+                    <p>Attempts: <span id="attempt-count">0</span>/3</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Birthday Surprise Section -->
+        <div id="surprise-section" class="section hidden">
+            <div class="confetti-container">
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+            </div>
+            
+            <div class="surprise-content">
+                <h1 class="birthday-title">🎉 HAPPY BIRTHDAY PEARL! 🎉</h1>
+                
+                <div class="birthday-message">
+                    <p class="message-text">
+                        Dear Pearl,<br><br>
+                        You are the most amazing friend anyone could ask for! 
+                        Your kindness, laughter, and beautiful spirit make every day brighter. 
+                        Thank you for being you!<br><br>
+                        Wishing you a year filled with love, joy, and all the wonderful things you deserve!<br><br>
+                        💖 Happy Birthday! 💖
+                    </p>
+                </div>
+                
+                <div class="birthday-gifts">
+                    <div class="gift-item">🎁</div>
+                    <div class="gift-item">🎈</div>
+                    <div class="gift-item">🎂</div>
+                    <div class="gift-item">💝</div>
+                    <div class="gift-item">✨</div>
+                </div>
+                
+                <div class="music-player">
+                    <button id="play-music" onclick="toggleMusic()">🎵 Play Birthday Music</button>
+                </div>
+                
+                <div class="reset-section">
+                    <button id="reset-btn" onclick="resetPuzzle()">🔄 Play Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
